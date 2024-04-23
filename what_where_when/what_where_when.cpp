@@ -45,7 +45,8 @@ int main ()
       char qbuffer[100], abuffer[10];
 
       path = "C:\\files\\what_where_when\\";
-      if (sector > 99) sector /= 100;
+      if (sector > 19) sector /= 10;
+      if (sector > 99) continue;
       if (sector > 9)
       {
         sector -= 10;
