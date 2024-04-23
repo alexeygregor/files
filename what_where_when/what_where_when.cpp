@@ -19,7 +19,7 @@ int main ()
     cout << "Rotate a top: ";
     cin >> top;
 
-    if (cin.fail() || cin.peek() != '\n' || top <= 0)
+    if (cin.fail() || cin.peek() != '\n' || top <= 0 || top >= 100)
     {
       cerr << "Error. Try again.\n";
       cin.clear();
@@ -45,7 +45,6 @@ int main ()
       char qbuffer[100], abuffer[10];
 
       path = "C:\\files\\what_where_when\\";
-      if (sector > 99) continue;
       if (sector > 13)
       { while (sector >= 13) sector -= 13; } 
       if (sector > 9)
